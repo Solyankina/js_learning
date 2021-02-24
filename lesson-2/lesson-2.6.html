@@ -1,0 +1,56 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+/*
+6. Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation), где arg1, arg2 – значения аргументов, operation – строка с названием операции. В зависимости от переданного значения операции выполнить одну из арифметических операций (использовать функции из пункта 5) и вернуть полученное значение (использовать switch).
+*/
+
+let arg1 = 2;
+let arg2 = 16;
+operation = 'sum'
+
+function getSum(arg1, arg2) {
+        return console.log(arg1 + arg2);
+    } 
+
+function getSub(arg1, arg2) {
+        return console.log(arg1 - arg2);
+    } 
+
+function getDiv(arg1, arg2) {
+        return console.log(arg1 / arg2);
+    } 
+
+function getMul(arg1, arg2) {
+        return console.log(arg1 * arg2);
+    }
+
+
+function mathOperation(arg1, arg2, operation) {
+	switch(operation) {
+		case 'sum':
+		return getSum(arg1, arg2);
+		break;
+
+		case 'subtraction':
+		return getSub(arg1, arg2);
+		break;
+
+		case 'division':
+		return getDiv(arg1, arg2);
+		break;
+
+		case 'multiplication':
+		return getMul(arg1, arg2);
+		break;
+
+		default:
+        	console.log('Неизвестная операция');
+	}
+}
+console.log(mathOperation(arg1, arg2, operation));
+
+
+
+
+	
+</script>

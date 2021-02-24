@@ -1,0 +1,65 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+/*
+4. Присвоить переменной а значение в промежутке [0..15]. С помощью оператора switch организовать вывод чисел от a до 15.
+*/
+
+	let a = 10;	
+	let message = 'Первый вариант:';
+
+	//Первый вариант
+	switch (a) {
+		case 0: case 1: case 2: case 3: case 4: case 5: case 6: case 7: case 8: case 9: case 10: case 11: case 12: case 13: case 14: case 15:
+			for (let i = a; i <= 15; i++) {
+			 	message += ' ' + i;
+			 } 
+			 break;
+		default: 
+			message = 'а должно быть от 0 до 15';
+	}
+
+	console.log(message);
+
+	//Второй вариант
+	message = 'Второй вариант:';
+
+	switch (a) {
+		case 0: 
+			message += ' 0';
+		case 1: 
+			message += ' 1';
+		case 2: 
+			message += ' 2';
+		case 3: 
+			message += ' 3';
+		case 4:
+			message += ' 4';
+		case 5: 
+			message += ' 5';
+		case 6: 
+			message += ' 6';
+		case 7: 
+			message += ' 7';
+		case 8: 
+			message += ' 8';
+		case 9: 
+			message += ' 9';
+		case 10: 
+			message += ' 10';
+		case 11: 
+			message += ' 11';
+		case 12: 
+			message += ' 12';
+		case 13: 
+			message += ' 13';
+		case 14: 
+			message += ' 14';
+		case 15: 
+			message += ' 15';
+			break;
+		default: 
+			message = "а должно быть от 0 до 15"
+	}
+
+	console.log(message);
+</script>
