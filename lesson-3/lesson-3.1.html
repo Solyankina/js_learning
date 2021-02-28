@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+/*
+1. С помощью цикла while вывести все простые числа в промежутке от 0 до 100.
+*/
+
+
+function isSimple(num) {
+	let abs = Math.abs(num)
+
+	for(var i = 2; i < abs; i++) {
+		if(abs % i === 0) return false;
+	}
+
+	return abs > 0;
+}
+
+let n = 0;
+
+while(n <= 100) {
+	if (isSimple(n)) {
+		console.log(n);
+	}
+	n++;
+}
+
+</script>
