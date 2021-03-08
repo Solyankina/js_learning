@@ -41,16 +41,14 @@ const cart = {
 }
 
 function renderCart(target) {
-	let divElement = document.createElement('div');
 	let message = 'Корзина пуста';
 
 	if (cart.length != 0) {
 		message = 'В корзине: ' + cart.totalCount() + ' товаров на сумму ' + cart.totalPrice() + ' рублей';
 	}
 
-	divElement.innerHTML = message;
-	target.appendChild(divElement); 
+	target.innerHTML = message;
 }
 
 
-renderCart(document.body);
+renderCart(document.getElementById('catalog'));
